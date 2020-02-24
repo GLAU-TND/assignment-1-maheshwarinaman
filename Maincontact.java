@@ -7,14 +7,14 @@ public class Maincontact {
         Scanner s=new Scanner(System.in);
         System.out.println("Welcome to Contact list applicastion of NAMAN");
         ArrayList<String> arr2=new ArrayList<>();
-        Contact contact=new Contact();
+        Mycontact contact=new Mycontact();
         while (true){
             System.out.println("Press 1 to add a new contact\n"+"Press 2 to view all contact\n"+
                     "Press 3 to search for a contact\n"+"Press 4 to delete a contact\n"+"Press 5 to exit program");
             int a=s.nextInt();
             switch (a){
                 case 1:
-                    System.out.println("You have chosen to add a new contact:"+"\nPlease enter the name of the Person");
+                    System.out.println("You have chosen to add a new contact:"+"\nKindly enter the name of the Person");
                     System.out.println("First Name:");
                     String b=s.next();
                     arr2.add(b);
@@ -25,7 +25,7 @@ public class Maincontact {
                         System.out.println("Contact Number:");
                         long e = s.nextLong();
                         arr.add(e);
-                        System.out.println("Would you like to add another contact number? (y/n)");
+                        System.out.println("Do you like to add another contact number? (y/n)");
                         String st=s.next();
                         if(st.equals("n"))
                         {break;}
@@ -42,7 +42,7 @@ public class Maincontact {
                     contact.view(sa);
                     break;
                 case 3:
-                    System.out.println("You could search for a contact from their first names:");
+                    System.out.println("You could search for a contact from their First names:");
                     String g=s.next();
                     contact.search(g);
                     break;
