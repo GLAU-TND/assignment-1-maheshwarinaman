@@ -3,8 +3,10 @@ package code;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Mycontact {Nod head;
-    void add(Nod data){
+public class Mycontact 
+    {
+    Mynode head;
+    void add(Mynode data){
         if(head==null){
             head=data;            }
         else{
@@ -24,7 +26,7 @@ public class Mycontact {Nod head;
         return a;
     }   void view2(String[] a){
         for (int i = 0; i <a.length ; i++) {
-            Nod n=head;
+            Mynode n=head;
             while(n!=null){
                 if(n.data.getFirstname()==a[i]){
                     System.out.println(i+1+". "+n.data.getFirstname()+" "+n.data.getLastname());;}
@@ -33,7 +35,7 @@ public class Mycontact {Nod head;
     }
     void view(String[] a){
         for (int i = 0; i <a.length ; i++) {
-            Nod n=head;
+            Mynode n=head;
             while(n!=null){
                 if(n.data.getFirstname()==a[i]){
                     print(n);}
@@ -41,8 +43,8 @@ public class Mycontact {Nod head;
             }}
     }
     void delete(String string){
-        Nod n=head;
-        Nod previous=null;
+        Mynode n=head;
+        Mynode previous=null;
         if (head.data.getFirstname()==string){
             head=n.next;
             n=head;
@@ -57,7 +59,7 @@ public class Mycontact {Nod head;
             }}
     }
     void search(String a){
-        Nod n=head;
+        Mynode n=head;
         int c=0;
         while (n!=null){
             if(n.data.getFirstname().equals(a)){
@@ -67,7 +69,7 @@ public class Mycontact {Nod head;
         if(c==0) System.out.println("No match found!");
         else if(c==1) System.out.println("1 match found!");
         else System.out.println(c+" matches found!");
-        Nod n1=head;
+        Mynode n1=head;
         while (n1!=null){
             if(n1.data.getFirstname().equals(a)){
                 print(n1);
@@ -77,7 +79,7 @@ public class Mycontact {Nod head;
         }
     }
     Maincontact m=new Maincontact();
-    void print(Nod n){
+    void print(Mynode n){
         System.out.println("-------- * -------- * -------- * --------");
         String[] s=n.data.getA().split(",");
         if(s.length>1){
