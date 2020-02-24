@@ -10,7 +10,7 @@ public class Mycontact
         if(head==null){
             head=data;            }
         else{
-            Nod temp=head;
+            Mynode temp=head;
             while(temp.next!=null){
                 temp=temp.next;
             }
