@@ -1,9 +1,9 @@
 package code;
 
 public class Mynode {
-    Person data;
+    Myperson data;
     Mynode next;
-    Mynode(Person data){
+    Mynode(Myerson data){
         this.data=data;
         next=null;
     }
