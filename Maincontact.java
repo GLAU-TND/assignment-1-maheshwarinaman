@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Maincontact {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        System.out.println("Welcome to Nandani's Contact List App");
+        System.out.println("Welcome to Contact list applicastion of NAMAN");
         ArrayList<String> arr2=new ArrayList<>();
         Contact contact=new Contact();
         while (true){
